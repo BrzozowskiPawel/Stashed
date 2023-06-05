@@ -13,11 +13,7 @@ struct ViewManager: View {
     var body: some View {
         switch shared.appStage {
         case .onboarding:
-            Button {
-                shared.appStage = .login
-            } label: {
-                Text("Onboarding -> Login")
-            }
+            OnboardingView()
         case .login:
             Button {
                 shared.appStage = .home

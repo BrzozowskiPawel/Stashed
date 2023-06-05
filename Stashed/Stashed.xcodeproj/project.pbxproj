@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E516E5402A2E68A20010D5FF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E53F2A2E68A20010D5FF /* OnboardingView.swift */; };
+		E516E5422A2E6CB70010D5FF /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5412A2E6CB70010D5FF /* OnboardingCell.swift */; };
+		E516E5442A2E6E2B0010D5FF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5432A2E6E2B0010D5FF /* OnboardingViewModel.swift */; };
+		E516E5472A2E6E610010D5FF /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5462A2E6E610010D5FF /* OnboardingData.swift */; };
 		E5810C1D2A2CDD5500C50BA3 /* StashedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */; };
 		E5810C212A2CDD5800C50BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5810C202A2CDD5800C50BA3 /* Assets.xcassets */; };
 		E5810C242A2CDD5800C50BA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5810C232A2CDD5800C50BA3 /* Preview Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E516E53F2A2E68A20010D5FF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E516E5412A2E6CB70010D5FF /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		E516E5432A2E6E2B0010D5FF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E516E5462A2E6E610010D5FF /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		E5810C192A2CDD5500C50BA3 /* Stashed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stashed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashedApp.swift; sourceTree = "<group>"; };
 		E5810C202A2CDD5800C50BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E516E53E2A2E688C0010D5FF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E516E53F2A2E68A20010D5FF /* OnboardingView.swift */,
+				E516E5412A2E6CB70010D5FF /* OnboardingCell.swift */,
+				E516E5432A2E6E2B0010D5FF /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E516E5452A2E6E530010D5FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E516E5462A2E6E610010D5FF /* OnboardingData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E5810C102A2CDD5500C50BA3 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +81,9 @@
 			children = (
 				E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */,
 				E5810C2A2A2CDD8300C50BA3 /* ViewManager.swift */,
+				E516E53E2A2E688C0010D5FF /* Onboarding */,
 				E5810C2C2A2CDD9100C50BA3 /* Managers */,
+				E516E5452A2E6E530010D5FF /* Models */,
 				E5810C202A2CDD5800C50BA3 /* Assets.xcassets */,
 				E5810C222A2CDD5800C50BA3 /* Preview Content */,
 			);
@@ -149,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5810C2B2A2CDD8300C50BA3 /* ViewManager.swift in Sources */,
+				E516E5442A2E6E2B0010D5FF /* OnboardingViewModel.swift in Sources */,
+				E516E5422A2E6CB70010D5FF /* OnboardingCell.swift in Sources */,
+				E516E5402A2E68A20010D5FF /* OnboardingView.swift in Sources */,
 				E5810C2E2A2CDDA900C50BA3 /* SharedDataManager.swift in Sources */,
 				E5810C1D2A2CDD5500C50BA3 /* StashedApp.swift in Sources */,
+				E516E5472A2E6E610010D5FF /* OnboardingData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
