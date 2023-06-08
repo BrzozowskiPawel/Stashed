@@ -15,11 +15,7 @@ struct ViewManager: View {
         case .onboarding:
             OnboardingView()
         case .login:
-            Button {
-                shared.appStage = .home
-            } label: {
-                Text("Login -> Home")
-            }
+            LockScreenView()
         case .home:
             Text("Home")
         }

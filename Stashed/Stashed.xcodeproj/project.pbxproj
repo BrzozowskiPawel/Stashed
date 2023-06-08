@@ -11,11 +11,14 @@
 		E516E5422A2E6CB70010D5FF /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5412A2E6CB70010D5FF /* OnboardingCell.swift */; };
 		E516E5442A2E6E2B0010D5FF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5432A2E6E2B0010D5FF /* OnboardingViewModel.swift */; };
 		E516E5472A2E6E610010D5FF /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516E5462A2E6E610010D5FF /* OnboardingData.swift */; };
+		E51AB7482A325E880033A249 /* PinPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AB7472A325E880033A249 /* PinPadView.swift */; };
+		E51AB74A2A325F980033A249 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AB7492A325F980033A249 /* HapticManager.swift */; };
 		E5810C1D2A2CDD5500C50BA3 /* StashedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */; };
 		E5810C212A2CDD5800C50BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5810C202A2CDD5800C50BA3 /* Assets.xcassets */; };
 		E5810C242A2CDD5800C50BA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5810C232A2CDD5800C50BA3 /* Preview Assets.xcassets */; };
 		E5810C2B2A2CDD8300C50BA3 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5810C2A2A2CDD8300C50BA3 /* ViewManager.swift */; };
 		E5810C2E2A2CDDA900C50BA3 /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5810C2D2A2CDDA900C50BA3 /* SharedDataManager.swift */; };
+		E5CB22C72A2FB055006F6CD2 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB22C62A2FB055006F6CD2 /* LockScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +26,15 @@
 		E516E5412A2E6CB70010D5FF /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		E516E5432A2E6E2B0010D5FF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		E516E5462A2E6E610010D5FF /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		E51AB7472A325E880033A249 /* PinPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPadView.swift; sourceTree = "<group>"; };
+		E51AB7492A325F980033A249 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		E5810C192A2CDD5500C50BA3 /* Stashed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stashed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashedApp.swift; sourceTree = "<group>"; };
 		E5810C202A2CDD5800C50BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5810C232A2CDD5800C50BA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5810C2A2A2CDD8300C50BA3 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		E5810C2D2A2CDDA900C50BA3 /* SharedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataManager.swift; sourceTree = "<group>"; };
+		E5CB22C62A2FB055006F6CD2 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E516E5482A2E75210010D5FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB22C62A2FB055006F6CD2 /* LockScreenView.swift */,
+				E51AB7472A325E880033A249 /* PinPadView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E5810C102A2CDD5500C50BA3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +97,7 @@
 				E5810C1C2A2CDD5500C50BA3 /* StashedApp.swift */,
 				E5810C2A2A2CDD8300C50BA3 /* ViewManager.swift */,
 				E516E53E2A2E688C0010D5FF /* Onboarding */,
+				E516E5482A2E75210010D5FF /* Login */,
 				E5810C2C2A2CDD9100C50BA3 /* Managers */,
 				E516E5452A2E6E530010D5FF /* Models */,
 				E5810C202A2CDD5800C50BA3 /* Assets.xcassets */,
@@ -102,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E5810C2D2A2CDDA900C50BA3 /* SharedDataManager.swift */,
+				E51AB7492A325F980033A249 /* HapticManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -180,6 +197,9 @@
 				E516E5442A2E6E2B0010D5FF /* OnboardingViewModel.swift in Sources */,
 				E516E5422A2E6CB70010D5FF /* OnboardingCell.swift in Sources */,
 				E516E5402A2E68A20010D5FF /* OnboardingView.swift in Sources */,
+				E51AB7482A325E880033A249 /* PinPadView.swift in Sources */,
+				E5CB22C72A2FB055006F6CD2 /* LockScreenView.swift in Sources */,
+				E51AB74A2A325F980033A249 /* HapticManager.swift in Sources */,
 				E5810C2E2A2CDDA900C50BA3 /* SharedDataManager.swift in Sources */,
 				E5810C1D2A2CDD5500C50BA3 /* StashedApp.swift in Sources */,
 				E516E5472A2E6E610010D5FF /* OnboardingData.swift in Sources */,
