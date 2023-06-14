@@ -14,7 +14,7 @@ class SharedDataManager: ObservableObject {
     
     
     private init() {
-        appStage = .login
+        appStage = .home
     }
 }
 
