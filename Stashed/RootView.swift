@@ -1,5 +1,5 @@
 //
-//  ViewManager.swift
+//  RootView.swift
 //  Stashed
 //
 //  Created by Paweł Brzozowski on 04/06/2023.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ViewManager: View {
+struct RootView: View {
     @ObservedObject var shared = SharedDataManager.shared
+    let viewFactory: ViewFactory
     
     var body: some View {
         switch shared.appStage {
@@ -17,13 +18,13 @@ struct ViewManager: View {
         case .login:
             LockScreenView()
         case .home:
-            Text("Home")
+            viewFactory.buildHomeCordinatingView()
         }
     }
 }
 
-struct ViewManager_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        ViewManager()
+        RootView(viewFactory: ViewFactory())
     }
 }

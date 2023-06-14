@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct StashedApp: App {
+    private let viewFactory = ViewFactory()
+    
     var body: some Scene {
         WindowGroup {
-            ViewManager()
+            NavigationStack {
+                viewFactory.buildRootView()
+            }
         }
     }
 }
